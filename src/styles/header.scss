@@ -20,14 +20,13 @@
   height: 40px;
 }
 
-
 .nav {
   flex: 1;
 }
 
 .nav__list {
   display: flex;
-justify-content: right;
+  justify-content: right;
 }
 
 .nav__item + .nav__item {
