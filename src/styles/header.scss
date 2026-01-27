@@ -4,6 +4,8 @@
 
   height: 60px;
   padding: 0 50px;
+
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -19,12 +21,11 @@
 }
 
 .nav {
-  flex: 1;
+  display: flex;
 }
 
 .nav__list {
   display: flex;
-  justify-content: right;
 }
 
 .nav__item + .nav__item {
