@@ -1,46 +1,41 @@
 .header {
+  height: 60px;
+
   display: flex;
   align-items: center;
 
-  height: 60px;
   padding: 0 50px;
 
-  justify-content: space-between;
+  border-bottom: 1px solid $color-border;
 }
 
 .header__logo {
   display: inline-flex;
   align-items: center;
-  flex-shrink: 0;
 }
 
 .header__logo-image {
   display: block;
-  width: 40px;
-  height: 40px;
 }
 
 .nav {
+  flex: 1;
   display: flex;
+  justify-content: right;
 }
 
 .nav__list {
   display: flex;
-}
-
-.nav__item + .nav__item {
-  margin-left: 20px;
+  gap: 20px;
 }
 
 .nav__link {
   display: inline-flex;
   align-items: center;
-
   height: 60px;
 
   text-transform: uppercase;
   line-height: 1;
-
   color: $color-dark;
 
   transition: color $transition-time;
@@ -58,8 +53,10 @@
 .nav__link.is-active::after {
   content: '';
   position: absolute;
+
   left: 50%;
   bottom: 0;
+
   transform: translateX(-50%);
 
   width: 37px;

@@ -1,7 +1,7 @@
 @import './variables';
-@import './card';
-@import './stars';
 @import './header';
+@import './stars';
+@import './card';
 
 html {
   box-sizing: border-box;
@@ -55,21 +55,25 @@ a {
 
   display: grid;
   grid-template-columns: repeat(1, 200px);
-  gap: 46px;
-  column-gap: 48px;
+  gap: 46px 48px;
 
-  justify-content: center;
-  overflow: visible;
+  place-content: start center;
+}
 
-  @media (min-width: 488px) {
+@media (min-width: 488px) {
+  .catalog {
     grid-template-columns: repeat(2, 200px);
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .catalog {
     grid-template-columns: repeat(3, 200px);
   }
+}
 
-  @media (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .catalog {
     grid-template-columns: repeat(4, 200px);
   }
 }
